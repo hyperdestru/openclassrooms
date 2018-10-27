@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ajouter un article</title>
+    </head>
+    <body>
+        <h1>Ajout d'un article</h1>
+        <form id="formulaire">
+            <p>
+                <label for="titre">Titre :</label>
+                <input type="text" id="titre" name="titre" required=""></input>
+            </p>
+            <p>
+                <label for="contenu" style="display: block">Contenu :</label>
+                <textarea id="contenu" cols="41" rows="7" name="contenu"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Ajouter" name="validation" id="validation"></input>
+            </P>
+        </form>
+        <div id="resultat"></div>
+        <script src="../js/ajax.js"></script>
+        <script src="../js/article.js"></script>
+    </body>
+</html>

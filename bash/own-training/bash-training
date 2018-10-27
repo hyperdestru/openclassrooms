@@ -1,0 +1,16 @@
+#!/bin/bash
+
+for i in {1..9}
+do
+	if [ -e file$i ]
+	then
+		echo "Le fichier file$i est deja present"
+
+	else
+		mkdir file$i
+		echo "this is file$i" > description$i
+		mv whatisfile$i file$i
+	fi
+done
+
+
